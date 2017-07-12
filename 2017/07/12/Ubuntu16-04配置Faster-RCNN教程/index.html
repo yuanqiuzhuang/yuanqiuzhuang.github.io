@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Ubuntu16.04配置Faster RCNN教程 | Andrew Yuan&#39;s Blog | 生命不是要超越别人，而是要超越自己</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="显卡驱动安装1234sudo add-apt-repository ppa:graphics-drivers/ppasudo apt-get updatesudo apt-get install nvidia-367nvidia-smi #查看驱动是否安装成功">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu16.04配置Faster RCNN教程">
+<meta property="og:url" content="https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/index.html">
+<meta property="og:site_name" content="Andrew Yuan&#39;s Blog">
+<meta property="og:description" content="显卡驱动安装1234sudo add-apt-repository ppa:graphics-drivers/ppasudo apt-get updatesudo apt-get install nvidia-367nvidia-smi #查看驱动是否安装成功">
+<meta property="og:updated_time" content="2017-07-12T13:05:21.272Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ubuntu16.04配置Faster RCNN教程">
+<meta name="twitter:description" content="显卡驱动安装1234sudo add-apt-repository ppa:graphics-drivers/ppasudo apt-get updatesudo apt-get install nvidia-367nvidia-smi #查看驱动是否安装成功">
+    
+        <link rel="alternative" href="/atom.xml" title="Andrew Yuan&#39;s Blog" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.2">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/yuan.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">袁秋壮</h5>
+          <a href="mailto:yuanqiuzhuang@163.com" title="yuanqiuzhuang@163.com" class="mail">yuanqiuzhuang@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                目录
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/yuanqiuzhuang" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/578333343" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                微博
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Ubuntu16.04配置Faster RCNN教程</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Ubuntu16.04配置Faster RCNN教程</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-07-12T12:59:30.000Z" itemprop="datePublished" class="page-time">
+  2017-07-12
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/教程/">教程</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+<article id="post-Ubuntu16-04配置Faster-RCNN教程"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Ubuntu16.04配置Faster RCNN教程</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-7-12 20:59" datetime="2017-07-12T12:59:30.000Z"  itemprop="datePublished">2017-07-12</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/教程/">教程</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+<span>
+    <a href="/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/#comments" class="ds-thread-count" data-thread-key="Ubuntu16-04配置Faster-RCNN教程" data-count-type="comments"></a>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <ol>
+<li>显卡驱动安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:graphics-drivers/ppa</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install nvidia-367</div><div class="line">nvidia-smi #查看驱动是否安装成功</div></pre></td></tr></table></figure>
+</li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-07-12T13:05:21.272Z" title="2017-7-12 21:05" itemprop="dateUpdated">2017年7月12日 21:05</time>
+</span><br>
+
+
+        转载请注明出处：<a href="/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/" target="_blank" rel="external">https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/</a>
+    </div>
+    <footer>
+        <a href="https://yuanqiuzhuang.github.io">
+            <img src="/img/yuan.jpg" alt="袁秋壮">
+            袁秋壮
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/&title=《Ubuntu16.04配置Faster RCNN教程》 — Andrew Yuan's Blog&pic=https://yuanqiuzhuang.github.io/img/yuan.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/&title=《Ubuntu16.04配置Faster RCNN教程》 — Andrew Yuan's Blog&source=This is my blog" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Ubuntu16.04配置Faster RCNN教程》 — Andrew Yuan's Blog&url=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/&via=https://yuanqiuzhuang.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+
+
+    
+
+<div class="comments" id="comments">
+    <div class="ds-thread" data-thread-key="Ubuntu16-04配置Faster-RCNN教程" data-title="Ubuntu16.04配置Faster RCNN教程" data-url="https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
+
+
+</script>
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>Andrew Yuan's Blog &copy; 2016 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/&title=《Ubuntu16.04配置Faster RCNN教程》 — Andrew Yuan's Blog&pic=https://yuanqiuzhuang.github.io/img/yuan.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/&title=《Ubuntu16.04配置Faster RCNN教程》 — Andrew Yuan's Blog&source=This is my blog" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Ubuntu16.04配置Faster RCNN教程》 — Andrew Yuan's Blog&url=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/&via=https://yuanqiuzhuang.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACr0lEQVR42u3ay04DMQwF0P7/TxeJDQv6uLZjBsSZVVVmMjlBSlzbt1t83T+v/POzb5KRv1/5aM0LDw8PrzX1ZOjqi5PR8qVJ5vNgJnh4eHhrvMlhEL2mePwkC5SMgIeHh3ctb7K5z8F4eHh4f5eXHBJJIF4NvvHw8PB+G2+eQq1SkwPmQCiPh4eHd02W4NZ7/d7ni+t7eHh4/5h3H1y98n91W88Pgwfj4OHh4S3w8qRD8tf5nXkjQuFZPDw8vKO8vWA3T21UxywkiPHw8PCWeZPWqLxdoJpsrS7N04MBDw8P7xCvt8VPSv55iJynJ968EQ8PD+8ob9Lk1Lunt2T5Qjz4v+Hh4eGt8eaJhteb+CSw7rV54eHh4W3wqrfmh0EecPcC9OqC4uHh4Z3l5T/4q08lyYi8yzSfz5tcNR4eHt6AVy1QlTPErUXJZxIlI/Dw8PAWeJNC1KSoX03jVoN7PDw8vD3eJNFQTbD2FqX6FB4eHt7P8E6lGKrUwnSrbV54eHh4C7x8Wr2NO2FUQ+08kYGHh4e3wct/8PdWbr71j8J0PDw8vDXe6/JSXh5LylT5ws2XAA8PD2+D10uYVpG9KUbNAUELFx4eHt5ZXi+Mrk4oPyTy4ydaAjw8PLw13jyw7vGqi9X8xYCHh4d3lNcr+fe+yYPjSTEMDw8Pb5t3qvQ1bx3I2wsKjQh4eHh4C7x54jV5QTWvPDk8Ckg8PDy8Fu9evDY2615LQfQUHh4e3gJvUvhPEgfVrT8J3w8E03h4eHhj3qTw//rF1eTCZFGeIvHw8PDWeBsFsGpepBccRwcDHh4e3qW8PMztHQy9Dog3GRc8PDy8i3i9wljvsMkTFm9OATw8PLw1XjXYzUPq/Pukx6F5MODh4eEd5c0LYL20Qj7RPLG70jqAh4eH93XnBwV0NyuZkcGHAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+var duoshuoQuery = {short_name:'yuanqiuzhuang', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.2');
+
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.2" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

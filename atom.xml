@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yuanqiuzhuang.github.io/"/>
-  <updated>2016-12-28T04:38:32.000Z</updated>
+  <updated>2017-07-12T13:05:21.272Z</updated>
   <id>https://yuanqiuzhuang.github.io/</id>
   
   <author>
@@ -16,30 +16,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Github pages + Hexo搭建个人博客</title>
-    <link href="https://yuanqiuzhuang.github.io/2016/12/26/Github-pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://yuanqiuzhuang.github.io/2016/12/26/Github-pages-Hexo搭建个人博客/</id>
-    <published>2016-12-26T10:59:25.000Z</published>
-    <updated>2016-12-28T04:38:32.000Z</updated>
+    <title>Ubuntu16.04配置Faster RCNN教程</title>
+    <link href="https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04%E9%85%8D%E7%BD%AEFaster-RCNN%E6%95%99%E7%A8%8B/"/>
+    <id>https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/</id>
+    <published>2017-07-12T12:59:30.000Z</published>
+    <updated>2017-07-12T13:05:21.272Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">	<span class="keyword">int</span> n;</div><div class="line">	<span class="built_in">cin</span>&gt;&gt;n;</div><div class="line">	<span class="keyword">while</span>(n--)&#123;</div><div class="line">		<span class="built_in">string</span> s1,s2=<span class="string">""</span>;</div><div class="line">		<span class="built_in">cin</span>&gt;&gt;s1;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s1.length();i++)&#123;</div><div class="line">			<span class="keyword">switch</span>(s1[i])&#123;</div><div class="line">				<span class="keyword">case</span> <span class="string">'0'</span>:s2+=<span class="string">"0000"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'1'</span>:s2+=<span class="string">"0001"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'2'</span>:s2+=<span class="string">"0010"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'3'</span>:s2+=<span class="string">"0011"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'4'</span>:s2+=<span class="string">"0100"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'5'</span>:s2+=<span class="string">"0101"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'6'</span>:s2+=<span class="string">"0110"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'7'</span>:s2+=<span class="string">"0111"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'8'</span>:s2+=<span class="string">"1000"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'9'</span>:s2+=<span class="string">"1001"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'A'</span>:s2+=<span class="string">"1010"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'B'</span>:s2+=<span class="string">"1011"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'C'</span>:s2+=<span class="string">"1100"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'D'</span>:s2+=<span class="string">"1101"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'E'</span>:s2+=<span class="string">"1110"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">case</span> <span class="string">'F'</span>:s2+=<span class="string">"1111"</span>;<span class="keyword">break</span>;</div><div class="line">				<span class="keyword">default</span>:<span class="keyword">break</span>;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">int</span> len=s2.length();</div><div class="line">		<span class="keyword">if</span>(len%<span class="number">3</span>==<span class="number">1</span>) s2=<span class="string">"00"</span>+s2;</div><div class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(len%<span class="number">3</span>==<span class="number">2</span>) s2=<span class="string">"0"</span>+s2;</div><div class="line">		<span class="keyword">int</span> flag=<span class="number">0</span>;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=s2.length()<span class="number">-3</span>;i=i+<span class="number">3</span>)&#123;</div><div class="line">			<span class="keyword">int</span> r=<span class="number">4</span>*(s2[i]-<span class="string">'0'</span>)+<span class="number">2</span>*(s2[i+<span class="number">1</span>]-<span class="string">'0'</span>)+s2[i+<span class="number">2</span>]-<span class="string">'0'</span>;</div><div class="line">			<span class="keyword">if</span>(r) flag=<span class="number">1</span>;</div><div class="line">			<span class="keyword">if</span>(flag) <span class="built_in">cout</span>&lt;&lt;r;</div><div class="line">		&#125;</div><div class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>; </div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>哈哈哈哈哈</p>
-</blockquote>
+    <content type="html"><![CDATA[<ol>
+<li>显卡驱动安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:graphics-drivers/ppa</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install nvidia-367</div><div class="line">nvidia-smi #查看驱动是否安装成功</div></pre></td></tr></table></figure>
+</li>
+</ol>
 ]]></content>
     
     <summary type="html">
     
-      &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;
+      &lt;ol&gt;
+&lt;li&gt;显卡驱动安装&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div cla
     
     </summary>
     
       <category term="教程" scheme="https://yuanqiuzhuang.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
-    
-      <category term="github" scheme="https://yuanqiuzhuang.github.io/tags/github/"/>
-    
-      <category term="hexo" scheme="https://yuanqiuzhuang.github.io/tags/hexo/"/>
     
   </entry>
   
