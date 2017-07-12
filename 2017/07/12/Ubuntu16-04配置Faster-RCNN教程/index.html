@@ -20,16 +20,16 @@
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="显卡驱动安装1234sudo add-apt-repository ppa:graphics-drivers/ppasudo apt-get updatesudo apt-get install nvidia-367nvidia-smi #查看驱动是否安装成功">
+    <meta name="description" content="电脑配置 CPU：英特尔 Xeon(至强) E5-1620 v2 @ 3.70GHz 四核显卡：Nvidia Quadro K2200操作系统：Ubuntu 16.04 显卡驱动安装1234sudo add-apt-repository ppa:graphics-drivers/ppasudo apt-get updatesudo apt-get install nvidia-367nvidia-">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu16.04配置Faster RCNN教程">
 <meta property="og:url" content="https://yuanqiuzhuang.github.io/2017/07/12/Ubuntu16-04配置Faster-RCNN教程/index.html">
 <meta property="og:site_name" content="Andrew Yuan&#39;s Blog">
-<meta property="og:description" content="显卡驱动安装1234sudo add-apt-repository ppa:graphics-drivers/ppasudo apt-get updatesudo apt-get install nvidia-367nvidia-smi #查看驱动是否安装成功">
-<meta property="og:updated_time" content="2017-07-12T13:05:21.272Z">
+<meta property="og:description" content="电脑配置 CPU：英特尔 Xeon(至强) E5-1620 v2 @ 3.70GHz 四核显卡：Nvidia Quadro K2200操作系统：Ubuntu 16.04 显卡驱动安装1234sudo add-apt-repository ppa:graphics-drivers/ppasudo apt-get updatesudo apt-get install nvidia-367nvidia-">
+<meta property="og:updated_time" content="2017-07-12T14:19:41.410Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04配置Faster RCNN教程">
-<meta name="twitter:description" content="显卡驱动安装1234sudo add-apt-repository ppa:graphics-drivers/ppasudo apt-get updatesudo apt-get install nvidia-367nvidia-smi #查看驱动是否安装成功">
+<meta name="twitter:description" content="电脑配置 CPU：英特尔 Xeon(至强) E5-1620 v2 @ 3.70GHz 四核显卡：Nvidia Quadro K2200操作系统：Ubuntu 16.04 显卡驱动安装1234sudo add-apt-repository ppa:graphics-drivers/ppasudo apt-get updatesudo apt-get install nvidia-367nvidia-">
     
         <link rel="alternative" href="/atom.xml" title="Andrew Yuan&#39;s Blog" type="application/atom+xml">
     
@@ -156,6 +156,13 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#电脑配置"><span class="post-toc-number">1.</span> <span class="post-toc-text">电脑配置</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#显卡驱动安装"><span class="post-toc-number">2.</span> <span class="post-toc-text">显卡驱动安装</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装测试CUDA"><span class="post-toc-number">3.</span> <span class="post-toc-text">安装测试CUDA</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装CUDA"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">安装CUDA</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-下载CUDA安装包"><span class="post-toc-number">3.1.1.</span> <span class="post-toc-text">1. 下载CUDA安装包</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-切换到安装包所在目录，执行命令"><span class="post-toc-number">3.1.2.</span> <span class="post-toc-text">2. 切换到安装包所在目录，执行命令</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装cuDNN-v5-1"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">安装cuDNN v5.1</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#下载cuDNN安装包"><span class="post-toc-number">3.2.1.</span> <span class="post-toc-text">下载cuDNN安装包</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#切换到文件所在目录，解压文件"><span class="post-toc-number">3.2.2.</span> <span class="post-toc-text">切换到文件所在目录，解压文件</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#建立软链接"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">建立软链接</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#cuda-Samples测试"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">cuda Samples测试</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装相关依赖包"><span class="post-toc-number">4.</span> <span class="post-toc-text">安装相关依赖包</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装opencv-3-1-0"><span class="post-toc-number">5.</span> <span class="post-toc-text">安装opencv 3.1.0</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装配置caffe"><span class="post-toc-number">6.</span> <span class="post-toc-text">安装配置caffe</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#根据个人情况修改文件"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">根据个人情况修改文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#下载mnist数据集测试"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">下载mnist数据集测试</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#配置py-faster-rcnn"><span class="post-toc-number">7.</span> <span class="post-toc-text">配置py_faster-rcnn</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#运行faster-rcnn-demo"><span class="post-toc-number">8.</span> <span class="post-toc-text">运行faster rcnn demo</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#运行faster-rcnn-demo时遇到的问题"><span class="post-toc-number">9.</span> <span class="post-toc-text">运行faster rcnn demo时遇到的问题</span></a></li></ol>
+        </nav>
+    </aside>
+    
 <article id="post-Ubuntu16-04配置Faster-RCNN教程"
   class="post-article article-type-post fade" itemprop="blogPost">
 
@@ -183,10 +190,90 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <ol>
-<li>显卡驱动安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:graphics-drivers/ppa</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install nvidia-367</div><div class="line">nvidia-smi #查看驱动是否安装成功</div></pre></td></tr></table></figure>
+            <h1 id="电脑配置"><a href="#电脑配置" class="headerlink" title="电脑配置"></a>电脑配置</h1><blockquote>
+<p>CPU：英特尔 Xeon(至强) E5-1620 v2 @ 3.70GHz 四核<br>显卡：Nvidia Quadro K2200<br>操作系统：Ubuntu 16.04</p>
+<h1 id="显卡驱动安装"><a href="#显卡驱动安装" class="headerlink" title="显卡驱动安装"></a>显卡驱动安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:graphics-drivers/ppa</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install nvidia-367</div><div class="line">nvidia-smi #查看驱动是否安装成功</div></pre></td></tr></table></figure>
+</blockquote>
+<h1 id="安装测试CUDA"><a href="#安装测试CUDA" class="headerlink" title="安装测试CUDA"></a>安装测试CUDA</h1><h2 id="安装CUDA"><a href="#安装CUDA" class="headerlink" title="安装CUDA"></a>安装CUDA</h2><h3 id="1-下载CUDA安装包"><a href="#1-下载CUDA安装包" class="headerlink" title="1. 下载CUDA安装包"></a>1. 下载<a href="https://developer.nvidia.com/cuda-downloads" target="_blank" rel="external">CUDA</a>安装包</h3><blockquote>
+<p>我下载的版本是cuda_8.0.61_375.26_linux，下载runfile(local)那个</p>
+<h3 id="2-切换到安装包所在目录，执行命令"><a href="#2-切换到安装包所在目录，执行命令" class="headerlink" title="2. 切换到安装包所在目录，执行命令"></a>2. 切换到安装包所在目录，执行命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo cuda_8.0.61_375.26_linux.run --override</div></pre></td></tr></table></figure>
+<p>1). 启动安装程序，一直按空格到最后，输入accept接受条款<br>2). 输入n不安装nvidia图像驱动，之前已经安装过了<br>3). 输入y安装cuda 8.0工具<br>4). 回车确认cuda默认安装路径：/usr/local/cuda-8.0<br>5). 输入y用sudo权限运行安装，输入密码<br>6). 输入y或者n安装或者不安装指向/usr/local/cuda的符号链接<br>7). 输入y安装CUDA 8.0 Samples，以便后面测试<br>8). 回车确认CUDA 8.0 Samples默认安装路径：/home/yuan（yuan是我的用户名），该安装路径测试完可以删除 </p>
+<h2 id="安装cuDNN-v5-1"><a href="#安装cuDNN-v5-1" class="headerlink" title="安装cuDNN v5.1"></a>安装cuDNN v5.1</h2><h3 id="下载cuDNN安装包"><a href="#下载cuDNN安装包" class="headerlink" title="下载cuDNN安装包"></a>下载<a href="https://developer.nvidia.com/cudnn" target="_blank" rel="external">cuDNN</a>安装包</h3><p>需要申请注册账号，我下载的版本是cudnn-8.0-linux-x64-v5.1</p>
+<h3 id="切换到文件所在目录，解压文件"><a href="#切换到文件所在目录，解压文件" class="headerlink" title="切换到文件所在目录，解压文件"></a>切换到文件所在目录，解压文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar zxvf cudnn-8.0-linux-x64-v5.1.tgz</div></pre></td></tr></table></figure>
+<p>此时在该目录下会产生一个cuda文件，执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cd cuda/include/</div><div class="line">sudo cp cudnn.h /usr/local/cuda/include/ #复制头文件</div><div class="line">cd ../lib64 #打开lib64目录</div><div class="line">sudo cp lib* /usr/local/cuda/lib64/ #复制库文件</div><div class="line">sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn* #给所有用户增加这些文件的读权限</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="建立软链接"><a href="#建立软链接" class="headerlink" title="建立软链接"></a>建立软链接</h2><blockquote>
+<p>执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd /usr/local/cuda/lib64/</div><div class="line">sudo rm -rf libcudnn.so libcudnn.so.5</div><div class="line">sudo ln -s libcudnn.so.5.1.5 libcudnn.so.5</div><div class="line">sudo ln -s libcudnn.so.5 libcudnn.so</div></pre></td></tr></table></figure></p>
+<p>设置环境变量，终端输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/profile</div></pre></td></tr></table></figure></p>
+<p>在末尾加入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">PATH=/usr/local/cuda/bin:$PATH</div><div class="line">export PATH</div></pre></td></tr></table></figure></p>
+<p>保存后，创建链接文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vim /etc/ld.so.conf.d/cuda.conf</div></pre></td></tr></table></figure></p>
+<p>按a进入插入模式，增加下面一行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/local/cuda/lib64</div></pre></td></tr></table></figure></p>
+<p>按esc退出插入模式，按:wq保存退出<br>最后在终端输入sudo ldconfig使链接生效</p>
+<h2 id="cuda-Samples测试"><a href="#cuda-Samples测试" class="headerlink" title="cuda Samples测试"></a>cuda Samples测试</h2><p>打开CUDA 8.0 Samples默认安装路径，终端输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd /home/yuan/NVIDIA_CUDA-8.0_Samples   #（yuan是我的用户名）</div><div class="line">sudo make all -j8</div><div class="line">cd bin/x86_64/linux/release</div><div class="line">./deviceQuery</div></pre></td></tr></table></figure></p>
+<p>不报错说明CUDA安装成功。</p>
+<h1 id="安装相关依赖包"><a href="#安装相关依赖包" class="headerlink" title="安装相关依赖包"></a>安装相关依赖包</h1><p>执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential #必要的编译工具依赖</div><div class="line"></div><div class="line">sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler</div><div class="line"></div><div class="line">sudo apt-get install --no-install-recommends libboost-all-dev</div><div class="line"></div><div class="line">sudo apt-get install libatlas-base-dev</div><div class="line"></div><div class="line">sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev</div><div class="line"> </div><div class="line">sudo apt-get install git</div><div class="line"></div><div class="line">sudo apt-get install python-pip</div><div class="line"></div><div class="line">pip install ipython</div><div class="line"></div><div class="line">pip install cython</div><div class="line"></div><div class="line">sudo apt-get install python-numpy python-scipy python-matplotlib python-skimage</div><div class="line"></div><div class="line">#安装protobuf!!!</div><div class="line">pip install protobuf easydict pyyaml</div><div class="line"></div><div class="line">sudo install cmake</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h1 id="安装opencv-3-1-0"><a href="#安装opencv-3-1-0" class="headerlink" title="安装opencv 3.1.0"></a>安装opencv 3.1.0</h1><blockquote>
+<p>执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/Itseez/opencv/archive/3.1.0.zip</div><div class="line">cd opencv3.1.0/</div><div class="line">mkdir build</div><div class="line">cd build</div><div class="line">cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..</div></pre></td></tr></table></figure></p>
+<p>将/home/yuan/opencv-3.1.0/modules/cudalegacy/src/graphcuts.cpp里的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#if !defined (HAVE_CUDA) || defined (CUDA_DISABLER)</div></pre></td></tr></table></figure></p>
+<p>改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#if !defined (HAVE_CUDA) || defined (CUDA_DISABLER) || (CUDART_VERSION &gt;= 8000)</div></pre></td></tr></table></figure></p>
+<p>make<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">make -j8 </div><div class="line">sudo make install</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h1 id="安装配置caffe"><a href="#安装配置caffe" class="headerlink" title="安装配置caffe"></a>安装配置caffe</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/BVLC/caffe.git</div><div class="line">cd caffe</div><div class="line">sudo cp Makefile.config.example Makefile.config</div><div class="line">sudo gedit Makefile.config   #打开Makefile.config文件</div></pre></td></tr></table></figure>
+<h2 id="根据个人情况修改文件"><a href="#根据个人情况修改文件" class="headerlink" title="根据个人情况修改文件"></a>根据个人情况修改文件</h2><ol>
+<li><p>若使用cudnn，则修改 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#USE_CUDNN := 1</div></pre></td></tr></table></figure>
+</li>
+<li><p>若使用的opencv版本是3的，则修改 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#OPENCV_VERSION := 3</div></pre></td></tr></table></figure>
+</li>
+<li><p>若要使用python来编写layer，则将  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#WITH_PYTHON_LAYER := 0</div></pre></td></tr></table></figure>
 </li>
 </ol>
+<p>修改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#WITH_PYTHON_LAYER := 1</div></pre></td></tr></table></figure></p>
+<ol>
+<li>重要的一项 :<br>将<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># Whatever else you find you need goes here.</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>下面的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include</div><div class="line">LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib</div></pre></td></tr></table></figure></p>
+<p>修改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial</div><div class="line">LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>这是因为ubuntu16.04的文件包含位置发生了变化，尤其是需要用到的hdf5的位置，所以需要更改这一路径。  </p>
+</blockquote>
+<p>终端输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make all -j8</div></pre></td></tr></table></figure></p>
+<p>若编译失败可以<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make clean</div></pre></td></tr></table></figure></p>
+<p>清除第一次编译结果然后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">make all -j8</div><div class="line">make test -j8</div><div class="line">sudo ldconfig</div><div class="line">make runtest -j8</div><div class="line">make pycaffe -j8</div><div class="line">make distribute  #生成发布安装包</div><div class="line">cd /home/yuan/caffe/python</div><div class="line">python</div><div class="line">import caffe</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>不报错则编译成功</p>
+</blockquote>
+<h2 id="下载mnist数据集测试"><a href="#下载mnist数据集测试" class="headerlink" title="下载mnist数据集测试"></a>下载mnist数据集测试</h2><blockquote>
+<p>终端输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd home/yuan/caffe/data/mnist/</div><div class="line">./get_mnist.sh</div><div class="line">cd /home/yuan/caffe/</div><div class="line">./examples/mnist/create_mnist.sh</div></pre></td></tr></table></figure></p>
+<p>训练<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./examples/mnist/train_lenet.sh</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>训练的时候可以看到精度和损失值。</p>
+<blockquote>
+<p>至此Caffe配置成功。</p>
+<h1 id="配置py-faster-rcnn"><a href="#配置py-faster-rcnn" class="headerlink" title="配置py_faster-rcnn"></a>配置py_faster-rcnn</h1><p>终端执行以下命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git</div><div class="line">cd py-faster-rcnn/lib</div><div class="line">make</div><div class="line">cd py-faster-rcnn/caffe-fast-rcnn/</div></pre></td></tr></table></figure></p>
+<p>更新caffe版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git remote add caffe https://github.com/BVLC/caffe.git</div><div class="line">git fetch caffe</div><div class="line">git merge caffe/master #有的地方合并失败也没关系</div></pre></td></tr></table></figure></p>
+<p>在合并之后注释掉include/caffe/layers/python_layer.hppa文件里的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">self_.attr(“phase”) = static_cast(this-&gt;phase_)</div></pre></td></tr></table></figure></p>
+<p>把home/yuan/caffe目录下的Makefile.config文件copy到py-faster-rcnn/caffe-fast-rcnn/下</p>
+<p>执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make -j4</div></pre></td></tr></table></figure></p>
+<p>将/home/yuan/caffe/python/caffe目录下的_caffe.cpp copy（替换）到/home/yuan/py-faster-rcnn/caffe-fast-rcnn/python/caffe</p>
+<p>执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make pycaffe</div></pre></td></tr></table></figure></p>
+<p>将/home/yuan/py-faster-rcnn/caffe-fast-rcnn/python/caffe/<strong>init</strong>.py里的<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> .pycaffe <span class="keyword">import</span> Net, SGDSolver, NesterovSolver, AdaGradSolver, RMSPropSolver, AdaDeltaSolver, AdamSolver</div><div class="line"><span class="keyword">from</span> ._caffe <span class="keyword">import</span> set_mode_cpu, set_mode_gpu, set_device, Layer, get_solver, layer_type_list, set_random_seed</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>删去，包括&lt;&lt;&lt;&lt;&lt;HEAD和caffe master非法字符串。</p>
+<h1 id="运行faster-rcnn-demo"><a href="#运行faster-rcnn-demo" class="headerlink" title="运行faster rcnn demo"></a>运行faster rcnn demo</h1><blockquote>
+<p>在windows端用迅雷下载model，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">url：https://dl.dropboxusercontent.com/s/o6ii098bu51d139/faster_rcnn_models.tgz?dl=0</div><div class="line">CHECKSUM=ac116844f66aefe29587214272054668</div></pre></td></tr></table></figure></p>
+<p>在ubuntu环境中将文件解压到py-faster-rcnn/data/下，执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd py-faster-rcnn/</div><div class="line">./tools/demo.py --net zf   #--net：指定模型</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h1 id="运行faster-rcnn-demo时遇到的问题"><a href="#运行faster-rcnn-demo时遇到的问题" class="headerlink" title="运行faster rcnn demo时遇到的问题"></a>运行faster rcnn demo时遇到的问题</h1><blockquote>
+<p>问题1：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">File &quot;/home/yuan/py-faster-rcnn/tools/../lib/rpn/proposal_layer.py&quot;, line 64, in forward</div><div class="line">    cfg_key = str(self.phase) # either &apos;TRAIN&apos; or &apos;TEST&apos;</div><div class="line">    AttributeError: &apos;ProposalLayer&apos; object has no attribute &apos;phase&apos;</div></pre></td></tr></table></figure></p>
+<p>解决办法：找到/lib/rpn/proposal_layer.py，将第64行修改为 cfg_key = ‘TEST’（训练时再改回来？）</p>
+<p>问题2：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Loaded network /home/yuan/py-faster-rcnn/data/faster_rcnn_models/ZF_faster_rcnn_final.caffemodel</div><div class="line">    F0518 13:29:12.159129  2920 roi_pooling_layer.cu:91] Check failed: error == cudaSuccess (8 vs. 0)  invalid device function</div><div class="line">    *** Check failure stack trace: ***</div><div class="line">    已放弃 (核心已转储)</div></pre></td></tr></table></figure></p>
+<p>解决办法：显卡计算能力不同导致。修改 py-faster-rcnn/lib/setup.py 的第135行，将arch改为与显卡相匹配的数值，然后删除utils/bbox.c，nms/cpu_nms.c ，nms/gpu_nms.cpp。<br>重新编译：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cd py-faster-rcnn/lib/</div><div class="line">make</div><div class="line">cd ../caffe-fast-rcnn/</div><div class="line">make clean</div><div class="line">make -j4 &amp;&amp; make pycaffe -j8</div></pre></td></tr></table></figure></p>
+</blockquote>
 
         </div>
 
@@ -194,7 +281,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-07-12T13:05:21.272Z" title="2017-7-12 21:05" itemprop="dateUpdated">2017年7月12日 21:05</time>
+    最后更新时间：<time datetime="2017-07-12T14:19:41.410Z" title="2017-7-12 22:19" itemprop="dateUpdated">2017年7月12日 22:19</time>
 </span><br>
 
 
