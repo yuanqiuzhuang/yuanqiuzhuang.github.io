@@ -4,15 +4,15 @@
 
 # Site
 title: Andrew Yuan's Blog
-subtitle: Yuan Qiuzhuang
+subtitle: 研究生，码农，月薪500
 description: This is my blog
-author: Andrew Yuan
+author: 袁秋壮
 language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://yuanqiuzhuang.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
